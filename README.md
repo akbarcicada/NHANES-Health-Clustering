@@ -1,5 +1,4 @@
 ### README.md
-```markdown
 # NHANES Health Clustering with K-Means & DBSCAN
 
 ## 📖 Deskripsi
@@ -7,7 +6,7 @@ Proyek ini membandingkan dua metode clustering:
 - **K-Means** → berbasis centroid
 - **DBSCAN** → berbasis kepadatan & deteksi outlier
 
-Dataset: `NHANES_age_prediction.csv` (2.278 observasi, 10 fitur)  
+Dataset: `NHANES.csv` (2.278 observasi, 10 fitur)  
 Fokus: Segmentasi berdasarkan variabel metabolik (BMI, glukosa, insulin, usia).  
 
 ---
@@ -27,14 +26,15 @@ Fokus: Segmentasi berdasarkan variabel metabolik (BMI, glukosa, insulin, usia).
 
 ---
 
+## 📈 Review
+- 📍 K-Means efektif menemukan **5 segmen besar**: muda sehat, usia menengah, obesitas, hingga lansia dengan risiko metabolik.  
+- 🚨 DBSCAN lebih detail: menghasilkan **8 klaster + noise**, mampu mengidentifikasi *outlier* dengan risiko diabetes tinggi.  
+- 🧬 Pola menarik: **BMI tinggi + insulin tinggi** → cluster dengan risiko resistensi insulin serius.  
+- 👥 Validasi eksternal menunjukkan klaster selaras dengan kategori **usia (age_group)**.  
+
+---
+
 ## 🧰 Tools yang Digunakan
 - **Python (Colab/Jupyter)** → implementasi K-Means & DBSCAN  
 - **Excel** → eksplorasi awal dataset, distribusi variabel  
 - **Word** → dokumentasi hasil & interpretasi  
-
----
-
-## 🚀 Cara Menjalankan
-```bash
-git clone https://github.com/username/NHANES-Health-Clustering-KMeans-DBSCAN.git
-cd NHANES-Health-Clustering-KMeans-DBSCAN
